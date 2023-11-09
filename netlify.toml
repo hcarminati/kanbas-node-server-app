@@ -4,5 +4,5 @@ publish = "build/"
 
 [[redirects]]
 from = "/api/*"
-to = "https://kanbas-node-server-app-13fi.onrender.com/:splat"
+to = "https://kanbas-node-server-app-13fi.onrender.com/api/courses"
 status = 200
