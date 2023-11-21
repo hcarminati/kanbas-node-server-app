@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(
     cors({
              credentials: true,
-             origin: "*",
+             origin: 'http://localhost:4000' | 'https://kanbas-node-server-app-13fi.onrender.com',
          })
 );
 const sessionOptions = {
