@@ -12,6 +12,7 @@ import "dotenv/config";
 import session from "express-session";
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+console.log(process.env.DB_CONNECTION_STRING);
 mongoose.connect(CONNECTION_STRING);
 
 const app = express();
