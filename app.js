@@ -20,7 +20,10 @@ app.use(express.json());
 app.use(
     cors({
              credentials: true,
-             origin: '*',
+             origin: 'http://localhost:3000'
+                     | 'https://a5--shiny-biscuit-85bb2c.netlify.app'
+                     | 'https://a6--shiny-biscuit-85bb2c.netlify.app'
+                     | 'https://shiny-biscuit-85bb2c.netlify.app',
          })
 );
 const sessionOptions = {
