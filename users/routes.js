@@ -55,6 +55,9 @@ function UserRoutes(app) {
     const account = async (req, res) => {
         res.json(req.session['currentUser']);
     };
+    const getAccount = async (req, res) => {
+        res.json(req.session['currentUser']);
+    };
     app.post("/api/users", createUser);
     app.get("/api/users", findAllUsers);
     app.get("/api/users/:userId", findUserById);
@@ -64,5 +67,6 @@ function UserRoutes(app) {
     app.post("/api/users/signin", signin);
     app.post("/api/users/signout", signout);
     app.post("/api/users/account", account);
+    app.get("/api/users/account", getAccount);
 }
 export default UserRoutes;
